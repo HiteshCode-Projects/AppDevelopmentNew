@@ -1,0 +1,111 @@
+//Set Is Similar to Like LIST - But no Duplicate data is allowed
+void main() {
+  // Set<String> categories = {
+  //   "Electronics",
+  //   "Fashion",
+  //   "Books",
+  //   "Fashion",
+  //   "Home",
+  // };
+
+  // categories.add("Travel");
+
+  // categories.remove("Books");
+
+  // if (categories.contains("Fashion")) {
+  //   print("Fashion Selected");
+  // }
+
+  // print(categories);
+
+  //Convert List To Set(Remove Duplicate)
+
+  // List<String> items = ["Apple", "Mango", "Apple"];
+
+  // Set<String> uniqueitems = items.toSet();
+
+  // print(uniqueitems);
+
+  //Notofcation
+  Set<String> notifications = {};
+
+  notifications.add("Whatsapp Message");
+  notifications.add("Zomato");
+  notifications.add("Whatsapp Message");
+  notifications.add("unlox");
+
+  print(notifications);
+
+  for (var note in notifications) {
+    print(note);
+  }
+}
+
+
+
+
+
+void main() {
+  //Maps (Key:Value Pair ) - { }  curly Bracket
+  //User Profile , Api Data , JSON Data
+
+  //name:"Aditya"
+  //email:"abc@gmail.com"
+
+  Map<String, String> user = {"name": "Rahul", "email": "rahul@gmail.com"};
+
+  Map<String, dynamic> userProfile = {
+    "name": "Amit",
+    "age": 22,
+    "isLoggedin": true,
+  };
+
+  //Acess The data we need Key Name
+  print(userProfile["isLoggedin"]);
+  print(userProfile["name"]);
+
+  //Update - Existing data
+  userProfile["age"] = 36;
+  print(userProfile);
+
+  //remove data
+  userProfile.remove("name");
+  print(userProfile);
+}
+
+
+
+
+
+// void main() {
+//API - Like data
+
+// List<Map<String, dynamic>> users = [
+//   {"name": "John", "email": "j@gmai.com"},
+//   {"name": "Bob", "email": "b@gmai.com"},
+//   {"name": "Charlie", "email": "c@gmai.com"},
+// ];
+
+// //Travel inside loop
+// for (var user in users) {
+//   print("Name  : ${user["name"]} , Email : ${user["email"]}");
+// }
+//}
+
+//Real App Example - User Login Check
+//data for user(username , pass) and admin(username , password)
+
+List<Map<String, String>> userss = [
+  {"username": "admin", "password": "1234"},
+  {"username": "user", "password": "0000"},
+];
+
+void main() {
+  for (var xyz in userss) {
+    if (xyz["username"] == "admin" && xyz["password"] == "1234") {
+      print("Login Sucessfully");
+    } else {
+      print("No Admin Acesss");
+    }
+  }
+}

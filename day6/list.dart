@@ -1,0 +1,49 @@
+void main() {
+  //List - Multiple data - symbol [ ] - sqaure bracket
+  //Index No / Position No - ALWAYS STARTS WITH 0
+
+  // List<String> users = ["Aditya", "Divij", "Magdaleena", "Sanchita"];
+  // print(users[1]);
+
+  // //Adding the data in the list-
+  // //add() -- By Default it adds at the last of the list
+
+  // users.add("Ayush");
+
+  // print(users);
+
+  // //remove() - Remove the data from list
+  // users.remove("Divij");
+
+  // print(users);
+
+  // //length() = Total no of data in list
+  // print(users.length);
+
+  // //Loop Through List(Travelling inside my List)
+
+  // for (String msg in users) {
+  //   print(msg);
+  // }
+
+  // //Update List Item
+  // users[3] = "Ragesh ";
+  // print(users);
+
+  // //Empty List
+  // List<String> cart = ["Shoes"];
+
+  // if (cart.isEmpty) {
+  //   print("Cart is Empty");
+  // }
+
+  List<String> permission = ["Admin", "Guest", "User"];
+
+  for (String user in permission) {
+    if (user == "Admin") {
+      print("Full Acess");
+    } else {
+      print("Limited Access");
+    }
+  }
+}
