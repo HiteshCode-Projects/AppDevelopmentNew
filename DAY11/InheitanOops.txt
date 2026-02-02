@@ -1,0 +1,138 @@
+class User {
+  String username;
+
+  String password;
+
+  User(this.username, this.password);
+
+  bool login() {
+    return username == "admin" && password == "1234";
+  }
+}
+
+void main() {
+  User user = User("admin", "1234");
+
+  if (user.login()) {
+    print("Login Successfully");
+  } else {
+    print("Login Failed");
+  }
+}
+
+
+
+class User {
+  String name = "";
+  int age = 0;
+
+  //Constructor - Special Type of method which runs whenever you call the className
+  // use SAME NAME AS CLASS NAME IMP - use this keyword to fetch the value of Parameters
+  User(this.name, this.age);
+
+  //Task - Method(Functions)
+
+  void greet() {
+    print("Hello , My Name is $name");
+  }
+}
+
+void main() {
+  // User user1 = User();
+
+  // user1.name = "Aditya";
+  // user1.age = 22;
+
+  // User user2 = User();
+
+  // user2.name = "Charlie";
+  // user2.age = 15;
+  // user2.greet();
+
+  // print(user1.name);
+
+  // print(user2.name);
+
+  //Calling with Constructor
+
+  User user3 = User("Sneha", 21);
+  print(user3.name);
+}
+
+
+
+//Parent Class
+
+class User {
+  String name;
+
+  User(this.name); //Constructor method - SAME CLASS NAME
+
+  void login() {
+    print("$name logged in");
+  }
+}
+
+//Child Class using "extends"
+
+class Admin extends User {
+  Admin(String name) : super(name);
+
+  void deletUser() {
+    print("User Deleted");
+  }
+}
+
+//CHILD CLASS - 2
+class Customer extends User {
+  Customer(String name) : super(name);
+
+  void placeOrder() {
+    print("Order Placed");
+  }
+}
+
+void main() {
+  //Object Creation
+  //ClassName  ObjectName = ClassName/Constructor(ParaMeter Value)
+  Admin admin = Admin("Swadhina");
+
+  admin.login(); //Access to Method of Parent
+  admin.deletUser(); //Using its Own Method
+
+  //2nd Object
+  Customer xyz = Customer("Rahul");
+  xyz.login(); //Access to Method of Parent
+  xyz.placeOrder(); //Using its Own Method
+}
+
+
+
+
+
+----------------
+
+//Method Overidding - Child Changes Parent Behavior - Same method in Parent and Class
+
+class User {
+  //Parent
+
+  void login() {
+    print("User Logged in");
+  }
+}
+
+class Admin extends User {
+  //child
+
+  @override
+  void login() {
+    print("Admin Logged in with full access");
+  }
+}
+
+void main() {
+  Admin abc = Admin();
+
+  abc.login();
+}
