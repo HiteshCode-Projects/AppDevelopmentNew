@@ -15,10 +15,12 @@ class Admin extends User {
   void login() {
     print("Admin Logged in with full access");
   }
+  
 }
 
 void main() {
-  Admin abc = Admin();
+  User abc = User();
 
   abc.login();
+
 }
