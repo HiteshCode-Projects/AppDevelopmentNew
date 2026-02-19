@@ -5,6 +5,8 @@ void main() {
 }
 
 class ProfileApp extends StatelessWidget {
+  const ProfileApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
