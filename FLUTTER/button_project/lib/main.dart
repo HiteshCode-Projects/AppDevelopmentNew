@@ -5,6 +5,8 @@ void main() {
 }
 
 class LikedApp extends StatelessWidget {
+  const LikedApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
