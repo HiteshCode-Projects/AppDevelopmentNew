@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "582565721581",
+    "project_id": "authenticationp-688a8",
+    "storage_bucket": "authenticationp-688a8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582565721581:android:08f8a234d356e34d0e63e4",
+        "android_client_info": {
+          "package_name": "com.example.authentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDULVSroUukilfEcFF2_nTyRp-z3hoA9TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582565721581:android:324232b8f34e75730e63e4",
+        "android_client_info": {
+          "package_name": "com.example.firebase_full_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDULVSroUukilfEcFF2_nTyRp-z3hoA9TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
